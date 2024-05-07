@@ -107,7 +107,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3"><span class="dnerf">Datasets</span> </h2>
+        <h2 class="title is-2"><span class="dnerf">Datasets</span> </h2>
         <!-- Interpolating. -->
         <h3 class="title is-4">Radiological Hand Pose Estimation (RHPE)</h3>
         <div class="column content has-text-justified">
@@ -167,37 +167,32 @@
     </div>
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Publications</h2>
+        <h2 class="title is-2">Publications</h2>
         <div class="column has-text-centered">
-          <h2 class="title is-1 publication-title">BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis</h2>
+          <h2 class="title is-3 publication-title">SIMBA: Specific Identity Markers for Bone Age Assessments</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://angelacast135.github.io">Angela Castillo</a><sup>*1</sup>,</span>
+              <p>Cristina González</p><sup>*1</sup>,</span>
             <span class="author-block">
-              <a href="https://mc-escobar11.github.io">Maria Escobar</a><sup>*1</sup>,</span>
+              <p>Maria Escobar</p><sup>*1</sup>,</span>
             <span class="author-block">
-              <a href="https://guillaumejs2403.github.io">Guillaume Jeanneret</a><sup>2</sup>,
+              <p>Laura Daza</p><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.albertpumarola.com">Albert Pumarola</a><sup>3</sup>,
+              <p>Felipe Torres</p><sup>1</sup>,
             </span>
             <p></p>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=k0nZO90AAAAJ&hl=en&oi=ao">Pablo Arbeláez</a><sup>1</sup>,
+              <a>Gustavo Triana</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=7T0CPEkAAAAJ&hl=en">Ali Thabet</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://gdude.de">Artsiom Sanakoyeu</a><sup>3</sup>
+              <a>Pablo Arbeláez</a><sup>1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>CINFONIA, Universidad de Los Andes, </span>
-            <span class="author-block"><sup>2</sup>University of Caen Normandie, ENSICAEN, CNRS, France, </span>
-            <p></p>
-            <span class="author-block"><sup>3</sup>Meta AI</span>            
+            <span class="author-block"><sup>2</sup>Fundación Santa Fé de Bogotá </span>         
           </div>
            <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>*</sup>Denotes equal contribution.</span> 
@@ -207,7 +202,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2304.11118.pdf"
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-59725-2_73"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -216,7 +211,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2304.11118"
+                <a href="https://arxiv.org/abs/2007.05454"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -226,7 +221,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/BCV-Uniandes/BoDiffusion"
+                <a href="https://github.com/BCV-Uniandes/SIMBA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -239,10 +234,21 @@
           </div>
           <div class="content has-text-justified">
             <p>
-              Mixed reality applications require tracking the user's full-body motion to enable an 
-              immersive experience. However, typical head-mounted devices can only track head 
-              and hand movements, leading to a limited reconstruction of full-body motion due 
-              to variability in lower body configurations. 
+              Bone Age Assessment (BAA) is a task performed by radiologists to diagnose abnormal growth in a child.
+       In manual approaches, radiologists take into account different dentity markers when calculating bone age, i.e.,
+        chronological age and gender. However, the current automated Bone Age Assessment methods do not completely exploit
+         the information present in the patient's metadata. With this lack of available methods as motivation, we present
+          SIMBA: Specific Identity Markers for Bone Age Assessment. SIMBA is a novel approach for the task of BAA based on
+           the use of identity markers.
+          </p>
+          <p>
+        For this purpose, we build upon the state-of-the-art model, fusing the information present in the identity markers
+         with the visual features created from the original hand radiograph. We then use this robust representation to
+          estimate the patient's relative bone age: the difference between chronological age and bone age. We validate 
+          SIMBA on the Radiological Hand Pose Estimation dataset and find that it outperforms previous state-of-the-art 
+          methods. SIMBA sets a trend of a new wave of Computer-aided Diagnosis methods that incorporate all of the data 
+          that is available regarding a patient. To promote further research in this area and ensure reproducibility  we 
+          will provide the source code as well as the pre-trained models of SIMBA. 
             </p>
 
           </div>
