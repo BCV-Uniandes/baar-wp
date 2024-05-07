@@ -88,7 +88,8 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Bone Age Assessment Resources</h1>
-          <h2 class="subtitle has-text-centered">
+          <br/>
+          <h2 class="subtitle has-text-justified">
             Bone Age Assessment (BAA) is a critical factor for determining delayed development in children, which can be a sign of pathologies such as endocrine diseases,
             growth abnormalities, chromosomal, neurological and congenital disorders among others. Typically, specialists such as pediatric endocrinologists inspect 
             visually an X-ray of the non-dominant hand of the child, and compare them against examples from textbook atlases to estimate Bone Age and predict adult height. 
@@ -101,164 +102,6 @@
   </div>
 </section>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://angelacast135.github.io">Angela Castillo</a><sup>*1</sup>,</span>
-            <span class="author-block">
-              <a href="https://mc-escobar11.github.io">Maria Escobar</a><sup>*1</sup>,</span>
-            <span class="author-block">
-              <a href="https://guillaumejs2403.github.io">Guillaume Jeanneret</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.albertpumarola.com">Albert Pumarola</a><sup>3</sup>,
-            </span>
-            <p></p>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=k0nZO90AAAAJ&hl=en&oi=ao">Pablo Arbeláez</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=7T0CPEkAAAAJ&hl=en">Ali Thabet</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://gdude.de">Artsiom Sanakoyeu</a><sup>3</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>CINFONIA, Universidad de Los Andes, </span>
-            <span class="author-block"><sup>2</sup>University of Caen Normandie, ENSICAEN, CNRS, France, </span>
-            <p></p>
-            <span class="author-block"><sup>3</sup>Meta AI</span>            
-          </div>
-           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>*</sup>Denotes equal contribution.</span> 
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2304.11118.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2304.11118"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/BCV-Uniandes/BoDiffusion"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/BoDiffusion_final1.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">BoDiffusion</span> synthesizes more accurate motions with substantially less jitter than AvatarPoser.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Mixed reality applications require tracking the user's full-body motion to enable an 
-            immersive experience. However, typical head-mounted devices can only track head 
-            and hand movements, leading to a limited reconstruction of full-body motion due 
-            to variability in lower body configurations. 
-          </p>
-          
-          <p>
-            We propose <span class="dnerf">BoDiffusion</span> -- a generative diffusion model for motion synthesis to 
-            tackle this under-constrained reconstruction problem. We present a time and 
-            space conditioning scheme that allows <span class="dnerf">BoDiffusion</span> to leverage sparse tracking 
-            inputs while generating smooth and realistic full-body motion sequences. 
-            To the best of our knowledge, this is the first approach that uses the reverse 
-            diffusion process to model full-body tracking as a conditional sequence generation task. 
-            We conduct experiments on the large-scale motion-capture dataset AMASS and show 
-            that our approach outperforms the state-of-the-art by a significant margin in 
-            terms of full-body motion realism and joint reconstruction error.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container is-max-desktop">
 
@@ -267,7 +110,7 @@
         <h2 class="title is-3"><span class="dnerf">Datasets</span> </h2>
         <!-- Interpolating. -->
         <h3 class="title is-4">Radiological Hand Pose Estimation (RHPE)</h3>
-        <div class="column content">
+        <div class="column content has-text-justified">
           <p>
             We collect the Radiological Hand Pose Estimation (RHPE) data from Colombian patients of the Fundación Santa Fe de Bogotá.
             The database comprises images of radiographs taken from left and right hands of both male 
@@ -283,100 +126,47 @@
                 class="interpolation-image"
                 alt="Interpolate start reference image."/>
           </div>
+          <div class="column has-text-centered">
           <div class="publication-links">
             <!-- PDF Link. -->
             <span class="link-block">
               <a href="https://drive.google.com/file/d/1Lq3XCOdOkJJKXPVPEYLvf1ScaFGh5uU6/view"
                  class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-file-archive"></i>
-                </span>
                 <span>Train</span>
                 </a>
             </span>
             <span class="link-block">
               <a href="https://drive.google.com/file/d/1bjvC1YZ0h0TK1MXeamWXb8dF6wx-ZKQQ/view"
                  class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-file-archive"></i>
-                </span>
                 <span>Validation</span>
                 </a>
             </span>
             <span class="link-block">
               <a href="https://drive.google.com/file/d/1sNFFDxbYjIeeBoSeYUokyq4dts_ZgnA_/view"
                  class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-file-archive"></i>
-                </span>
                 <span>Test</span>
                 </a>
             </span>
             <span class="link-block">
               <a href="https://drive.google.com/file/d/1NOtsunlmnYMufXEeeIHO_DPI77HJzx31/view"
                  class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-file-archive"></i>
-                </span>
                 <span>Annotations</span>
                 </a>
             </span>
             <span class="link-block">
               <a href="https://eval.ai/web/challenges/challenge-page/2297/overview"
                  class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-calculator"></i>
-                </span>
                 <span>Evaluation server</span>
                 </a>
             </span>
           </div>
         </div>
-
-        <h3 class="title is-4">Denoising Steps</h3>
-        <div class="column content">
-          <p>
-            During inference, we start from random 
-            Gaussian noise and perform T denoising steps until we reach a clean 
-            output motion. 
-          </p>
-          <!-- <video id="matting-video" controls playsinline height="100%">
-            <source src="./static/videos/matting.mp4"
-                    type="video/mp4">
-          </video> -->
-          <div class="content has-text-centered">
-            <img src="./static/images/denoising_steps.png"
-                class="interpolation-image"
-                alt="Interpolate start reference image."/>
-          </div>
-          
-        </div>
-
-        <div class="column content">
-          <p>
-            <span class="dnerf">BoDiffusion</span> synthesizes substantially more accurate 
-            and plausible full-body poses, particularly in the lower body where no 
-            IMU data are captured.
-          </p>
-          <!-- <video id="matting-video" controls playsinline height="100%">
-            <source src="./static/videos/matting.mp4"
-                    type="video/mp4">
-          </video> -->
-          <div class="content has-text-centered">
-            <img src="./static/images/seq_color_dit.png"
-                class="interpolation-image"
-                alt="Interpolate start reference image."/>
-          </div>
-          
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">More Examples</h2>
+        <h2 class="title is-3">Publications</h2>
 
         <!-- Interpolating. -->
         <h3 class="title is-4">Unconventional Poses</h3>
@@ -396,69 +186,7 @@
           </div>
           
         </div>
-        <h3 class="title is-4">Error on individual poses</h3>
-        <div class="column content">
-          <p>
-            <span class="dnerf">BoDiffusion</span> predicts poses with higher fidelity 
-          to the ground truth. In contrast, AvatarPoser struggles 
-          to predict accurate lower-body configurations.
-          </p>
-          <!-- <video id="matting-video" controls playsinline height="100%">
-            <source src="./static/videos/matting.mp4"
-                    type="video/mp4">
-          </video> -->
-          <div class="content has-text-centered">
-            <img src="./static/images/supp_mat_indv_flag.png"
-                class="interpolation-image"
-                alt="Interpolate start reference image."/>
-          </div>
-          
-        </div>
-        <!-- <div class="columns is-vcentered interpolation-panel"> -->
-        <!-- <div class="column is-3 has-text-centered">
-          <img src="./static/images/interpolate_start.jpg"
-                class="interpolation-image"
-                alt="Interpolate start reference image."/>
-          <p>Start Frame</p>
-        </div> -->
-          <!-- <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div> 
-        </div> -->
         <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
 
       </div>
     </div>
