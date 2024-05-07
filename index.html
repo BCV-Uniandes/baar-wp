@@ -82,6 +82,24 @@
   </div> -->
 </nav>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Bone Age Assessment Resources</h1>
+          <h2 class="subtitle has-text-centered">
+            Bone Age Assessment (BAA) is a critical factor for determining delayed development in children, which can be a sign of pathologies such as endocrine diseases,
+            growth abnormalities, chromosomal, neurological and congenital disorders among others. Typically, specialists such as pediatric endocrinologists inspect 
+            visually an X-ray of the non-dominant hand of the child, and compare them against examples from textbook atlases to estimate Bone Age and predict adult height. 
+            However, manual approaches are prone to intra and inter observer errors due to the level of expertise of the radiologist
+            or possible variations in the radiograph. Hence the need for an automated method for BAA. 
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="hero">
   <div class="hero-body">
@@ -196,64 +214,6 @@
 </section>
 
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -304,24 +264,73 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3"><span class="dnerf">BoDiffusion</span> </h2>
+        <h2 class="title is-3"><span class="dnerf">Datasets</span> </h2>
         <!-- Interpolating. -->
-        <h3 class="title is-4">Architecture</h3>
+        <h3 class="title is-4">Radiological Hand Pose Estimation (RHPE)</h3>
         <div class="column content">
           <p>
-            <span class="dnerf">BoDiffusion</span> is a diffusion process synthesizing 
-            full-body motion using sparse tracking signals as conditioning. 
+            We collect the Radiological Hand Pose Estimation (RHPE) data from Colombian patients of the Fundación Santa Fe de Bogotá.
+            The database comprises images of radiographs taken from left and right hands of both male 
+            and female patients between 0 and 240 months of age (0-20 years), with bone age annotations 
+            made by two expert radiologists for each patient. The dataset is composed of 6,279 images 
+            divided into 3 sets: 5,487 for training, 713 for validation and 79 for testing, maintaining 
+            the proportion of images used in each split of the RSNA dataset. A similar bone age distribution 
+            between the datasets suggests that they are compatible and can be used to study the influence of 
+            ethnicity on bone age assessment algorithms.
           </p>
-          <!-- <video id="matting-video" controls playsinline height="100%">
-            <source src="./static/videos/matting.mp4"
-                    type="video/mp4">
-          </video> -->
           <div class="content has-text-centered">
-            <img src="./static/images/Bodiffusion.png"
+            <img src="./static/images/overview_rhpe.png"
                 class="interpolation-image"
                 alt="Interpolate start reference image."/>
           </div>
-          
+          <div class="publication-links">
+            <!-- PDF Link. -->
+            <span class="link-block">
+              <a href="https://drive.google.com/file/d/1Lq3XCOdOkJJKXPVPEYLvf1ScaFGh5uU6/view"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-file-archive"></i>
+                </span>
+                <span>Train</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href="https://drive.google.com/file/d/1bjvC1YZ0h0TK1MXeamWXb8dF6wx-ZKQQ/view"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-file-archive"></i>
+                </span>
+                <span>Validation</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href="https://drive.google.com/file/d/1sNFFDxbYjIeeBoSeYUokyq4dts_ZgnA_/view"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-file-archive"></i>
+                </span>
+                <span>Test</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href="https://drive.google.com/file/d/1NOtsunlmnYMufXEeeIHO_DPI77HJzx31/view"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-file-archive"></i>
+                </span>
+                <span>Annotations</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href="https://eval.ai/web/challenges/challenge-page/2297/overview"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-calculator"></i>
+                </span>
+                <span>Evaluation server</span>
+                </a>
+            </span>
+          </div>
         </div>
 
         <h3 class="title is-4">Denoising Steps</h3>
@@ -456,32 +465,6 @@
     <!--/ Animation. -->
 
 
-    <!-- Concurrent Work. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
 
   </div>
 </section>
@@ -490,12 +473,26 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{castillo2023bodiffusion,
-  author    = {Castillo, Angela and Escobar, Maria and Jeanneret, Guillaume and Pumarola, Albert and Arbeláez, Pablo and Thabet, Ali and Sanakoyeu, Artsiom},
-  title     = {BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis},
-  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year      = {2023},
-}</code></pre>
+    <pre><code>
+      @inproceedings{escobar2019hand,
+        title={Hand Pose Estimation for Pediatric Bone Age Assessment},
+        author={Escobar, Mar{\'\i}a and Gonz{\'a}lez, Cristina and Torres, Felipe and Daza, Laura and Triana, Gustavo and Arbel{\'a}ez, Pablo},
+        booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+        pages={531--539},
+        year={2019},
+        organization={Springer}
+      }
+    </code></pre>
+    <pre><code>
+      @inproceedings{gonzalez2020simba,
+        title={SIMBA: Specific Identity Markers for Bone Age Assessment},
+        author={Gonz{\'a}lez, Cristina and Escobar, Mar{\'\i}a and Daza, Laura and Torres, Felipe and Triana, Gustavo and Arbel{\'a}ez, Pablo},
+        booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+        pages={753--763},
+        year={2020},
+        organization={Springer}
+      }      
+</code></pre>
   </div>
 </section>
 
@@ -503,11 +500,7 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/images/2304.11118.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/angelacast135" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/BCV-Uniandes" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
